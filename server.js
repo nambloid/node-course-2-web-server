@@ -37,14 +37,20 @@ hbs.registerHelper('upperCase', (text) => {
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
-        pageTitle: 'Welcome Page',
+        pageTitle: 'Welcome!',
         welcomeMessage: 'Welcome, minion!'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        pageTitle: 'About Page'
+        pageTitle: 'About'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
